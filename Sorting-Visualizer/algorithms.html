@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Algorithms</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="algorithms.html">Algorithms</a>
+    <a href="visualizer.html">Visualizer</a>
+    <a href="about.html">About</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <br>
+      <h1>Sorting Algorithms Explained</h1>
+      <p>
+        Sorting is a fundamental concept in computer science. Here, we explore
+        different sorting techniques and their efficiency.
+      </p>
+    </div>
+  </section>
+
+  <section class="algorithm-list">
+    <div class="algo-card" onclick="location.href='bubblesort.html'">
+      <h2>Bubble Sort</h2>
+      <p>
+        A straightforward approach that repeatedly compares adjacent pairs
+        and swaps them if out of order.
+      </p>
+    </div>
+    <div class="algo-card" onclick="location.href='insertionsort.html'">
+      <h2>Insertion Sort</h2>
+      <p>
+        Inserts each new element into its correct position, one at a time,
+        making it efficient for small or nearly sorted data.
+      </p>
+    </div>
+    <div class="algo-card" onclick="location.href='selectionsort.html'">
+      <h2>Selection Sort</h2>
+      <p>
+        Systematically selects the smallest element from the unsorted part
+        and places it in the correct spot.
+      </p>
+    </div>
+    <div class="algo-card" onclick="location.href='mergesort.html'">
+      <h2>Merge Sort</h2>
+      <p>
+        A divide-and-conquer strategy: split the list, sort each half,
+        then merge them back in order.
+      </p>
+    </div>
+    <div class="algo-card" onclick="location.href='quicksort.html'">
+      <h2>Quick Sort</h2>
+      <p>
+        Uses a pivot to partition the array, placing smaller elements on
+        one side and larger on the other.
+      </p>
+    </div>
+    <div class="algo-card" onclick="location.href='radixsort.html'">
+      <h2>Radix Sort</h2>
+      <p>
+        Processes numbers digit by digit, distributing them into buckets
+        to handle large sets efficiently.
+      </p>
+    </div>
+    <div class="algo-card" onclick="location.href='bucketsort.html'">
+      <h2>Bucket Sort</h2>
+      <p>
+        Groups elements into multiple buckets, sorts each bucket, then
+        merges them for a final sorted list.
+      </p>
+    </div>
+  </section>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>

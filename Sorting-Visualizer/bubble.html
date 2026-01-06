@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer -Bubble Sort</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="visualizer.html">Visualizer</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+    <h1>Bubble Sort Visualizer</h1>
+    <div class="controls">
+        <input type="text" id="array-input" placeholder="Enter numbers separated by commas">
+        <button id="generate-array">Generate Array</button>
+        <button id="sort-button">Start Bubble Sort</button>
+    </div>
+    <div class="array-container" id="array-container"></div>
+    <h1 id="h1">Bubble Sort Introduction</h1>
+    <div id="exp">
+        <p>
+        <b><u><i>Bubble Sort</i></u></b>:&nbsp It Is The Sorting Technique Which Sort The Element By Comparing It with the Adjacent Elements.
+            <br>
+            <br>
+        <b><u><i>Working</i></u></b>:&nbsp Repeatedly Compares the adjacent Element and swaps them if they are in the Wrong Order.
+        <br>
+        <br>
+        <b><u><i>Time Complexity:</i></u></b>&nbsp <i>O(n<sup>2</sup>)</i>In Best Case and Average Case.<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>O(n)</i>If The Array Is Already Sorted.
+        </p>
+        <img src="picture1.gif" alt="Fitted Image">
+    </div>
+    <script src="vis.js"></script>
+</body>
+</html>

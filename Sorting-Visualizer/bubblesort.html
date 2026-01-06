@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="visualizer.html">Visualizer</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <section class="algo-intro">
+        <h1><br><br>Bubble Sort</h1>
+        <p>Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process repeats until the array is sorted.</p>
+    </section>
+
+    <section class="algo-details">
+        <h2>How It Works</h2>
+        <ul>
+            <li>Compare adjacent elements in the array.</li>
+            <li>Swap them if they are in the wrong order.</li>
+            <li>Repeat the process for each element until the entire list is sorted.</li>
+            <li>The largest element "bubbles up" to its correct position after each pass.</li>
+        </ul>
+
+        <h2>Time Complexity</h2>
+        <p><strong>Best Case:</strong> O(n) (Already sorted list with optimized Bubble Sort)</p>
+        <p><strong>Worst Case:</strong> O(n²) (Reversed list, requires maximum swaps)</p>
+        <p><strong>Average Case:</strong> O(n²) (Random order elements)</p>
+
+        <h2>Example</h2>
+        <pre>
+            <img src="picture1.gif" ">
+        </pre>
+
+        <h2>Advantages of Bubble Sort</h2>
+        <ul>
+            <li>Simple and easy to understand.</li>
+            <li>Requires only a few lines of code.</li>
+            <li>Best case time complexity is O(n) when the array is already sorted.</li>
+            <li>No extra memory required (in-place sorting algorithm).</li>
+        </ul>
+
+        <h2>Disadvantages of Bubble Sort</h2>
+        <ul>
+            <li>Slow for large datasets due to O(n²) worst-case complexity.</li>
+            <li>Performs unnecessary swaps even when the array is almost sorted.</li>
+            <li>Other algorithms like Quick Sort or Merge Sort are much more efficient.</li>
+        </ul>
+
+        <h2>Real-World Applications</h2>
+        <ul>
+            <li>Good for **small datasets** where simplicity matters.</li>
+            <li>Useful for **teaching sorting concepts** due to its easy implementation.</li>
+            <li>Can be used when **only a few swaps are needed** (e.g., nearly sorted lists).</li>
+            <li>Embedded systems or situations where **minimal code is required**.</li>
+        </ul>
+
+    </section>
+
+    <section class="visualizer-link">
+        <a href="visualizer.html">Try Bubble Sort in the Visualizer →</a>
+    </section>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>

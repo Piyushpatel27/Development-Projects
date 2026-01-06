@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="visualizer.html">Visualizer</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <section class="algo-intro">
+        <h1><br><br>Selection Sort</h1>
+        <p>Selection Sort is a simple comparison-based sorting algorithm. It repeatedly finds the minimum element from the unsorted portion and swaps it with the first unsorted element.</p>
+    </section>
+
+    <section class="algo-details">
+        <h2>How It Works</h2>
+        <ul>
+            <li>Find the smallest element in the unsorted section of the array.</li>
+            <li>Swap it with the first unsorted element.</li>
+            <li>Move to the next unsorted element and repeat the process.</li>
+        </ul>
+
+        <h2>Time Complexity</h2>
+        <p><strong>Best Case:</strong> O(n²) (Even for sorted input)</p>
+        <p><strong>Worst Case:</strong> O(n²) (Reverse sorted input)</p>
+        <p><strong>Average Case:</strong> O(n²)</p>
+
+        <h2>Example</h2>
+        <pre>
+            <img src="Picture3.gif">
+        </pre>
+
+        <h2>Advantages & Disadvantages</h2>
+        <p><strong>✅ Advantages:</strong> Simple and easy to understand.</p>
+        <p><strong>❌ Disadvantages:</strong> Inefficient for large datasets due to O(n²) time complexity.</p>
+
+    </section>
+
+    <section class="visualizer-link">
+        <a href="visualizer.html">Try Selection Sort in the Visualizer →</a>
+    </section>
+
+    <script type="module" src="script.js"></script>
+
+
+</body>
+</html>

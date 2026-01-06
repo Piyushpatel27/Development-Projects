@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="visualizer.html">Visualizer</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <section class="algo-intro">
+        <h1><br><br>Bucket Sort</h1>
+        <p>Bucket Sort is a sorting algorithm that distributes elements into multiple "buckets," sorts each bucket individually, and then combines them to get the final sorted array.</p>
+    </section>
+
+    <section class="algo-details">
+        <h2>How It Works</h2>
+        <ul>
+            <li>Divide the elements into a number of buckets based on a predefined range.</li>
+            <li>Sort each individual bucket using another sorting algorithm (e.g., Insertion Sort or Merge Sort).</li>
+            <li>Concatenate all the sorted buckets to form the final sorted array.</li>
+        </ul>
+
+        <h2>Time Complexity</h2>
+        <p><strong>Best Case:</strong> O(n + k) (If elements are evenly distributed among buckets)</p>
+        <p><strong>Worst Case:</strong> O(n²) (If all elements go into one bucket, degrading to a slow sorting algorithm)</p>
+        <p><strong>Average Case:</strong> O(n + k)</p>
+
+        <video src="How_to_Bucket_Sort.mp4" controls autoplay muted loop width="600">
+            Your browser does not support the video tag.
+          </video>
+          
+
+        <h2><br>Advantages & Disadvantages</h2>
+        <p><strong>✅ Advantages:</strong> Works well for uniformly distributed floating-point numbers.</p>
+        <p><strong>❌ Disadvantages:</strong> Performance depends on bucket distribution, requiring extra memory.</p>
+
+    </section>
+
+    <section class="visualizer-link">
+        <a href="visualizer.html">Try Bucket Sort in the Visualizer →</a>
+    </section>
+
+    <script type="module" src="script.js"></script>
+
+
+</body>
+</html>

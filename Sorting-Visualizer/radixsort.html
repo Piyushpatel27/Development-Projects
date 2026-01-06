@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radix Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="visualizer.html">Visualizer</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <section class="algo-intro">
+        <h1><br><br>Radix Sort</h1>
+        <p>Radix Sort is a non-comparative sorting algorithm that sorts numbers by processing individual digits, from the least significant to the most significant.</p>
+    </section>
+
+    <section class="algo-details">
+        <h2>How It Works</h2>
+        <ul>
+            <li>Find the maximum number to determine the number of digits.</li>
+            <li>Sort numbers based on each digit, starting from the least significant (rightmost) digit.</li>
+            <li>Use a stable sorting algorithm like Counting Sort for each digit placement.</li>
+            <li>Repeat the process for all digits until the array is sorted.</li>
+        </ul>
+
+        <h2>Time Complexity</h2>
+        <p><strong>Best Case:</strong> O(nk) (Where k is the number of digits in the largest number)</p>
+        <p><strong>Worst Case:</strong> O(nk) (Stable sorting at each digit level)</p>
+        <p><strong>Average Case:</strong> O(nk)</p>
+
+        <h2>Example</h2>
+        <pre>
+            <img src="Radix.gif" ">
+        </pre>
+
+        <h2><br>Advantages & Disadvantages</h2>
+        <p><strong>✅ Advantages:</strong> Faster than comparison-based sorting for large numbers with fewer digits.</p>
+        <p><strong>❌ Disadvantages:</strong> Limited to integer sorting and requires additional space.</p>
+
+    </section>
+
+    <section class="visualizer-link">
+        <a href="visualizer.html">Try Radix Sort in the Visualizer →</a>
+    </section>
+
+    <script type="module" src="script.js"></script>
+
+
+</body>
+</html>

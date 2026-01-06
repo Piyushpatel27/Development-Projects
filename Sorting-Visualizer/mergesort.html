@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="visualizer.html">Visualizer</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <section class="algo-intro">
+        <h1><br><br>Merge Sort</h1>
+        <p>Merge Sort is a divide-and-conquer sorting algorithm that recursively splits an array into two halves, sorts them, and then merges them back together in sorted order.</p>
+    </section>
+
+    <section class="algo-details">
+        <h2>How It Works</h2>
+        <ul>
+            <li>Divide the array into two halves.</li>
+            <li>Recursively apply Merge Sort to each half.</li>
+            <li>Merge the two sorted halves into a single sorted array.</li>
+        </ul>
+
+        <h2>Time Complexity</h2>
+        <p><strong>Best Case:</strong> O(n log n)</p>
+        <p><strong>Worst Case:</strong> O(n log n)</p>
+        <p><strong>Average Case:</strong> O(n log n)</p>
+
+        <h2>Example</h2>
+        <pre>
+        Input: [8, 3, 5, 2, 7, 6, 4]
+
+        <img src="picture4.gif">
+        </pre>
+
+        <h2>Advantages & Disadvantages</h2>
+        <p><strong>✅ Advantages:</strong> Stable sorting algorithm, guaranteed O(n log n) time complexity.</p>
+        <p><strong>❌ Disadvantages:</strong> Uses extra space for merging, which can be inefficient for large datasets.</p>
+
+    </section>
+
+    <section class="visualizer-link">
+        <a href="visualizer.html">Try Merge Sort in the Visualizer →</a>
+    </section>
+
+    <script type="module" src="script.js"></script>
+
+
+</body>
+</html>

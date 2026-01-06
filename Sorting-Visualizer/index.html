@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="visualizer.html">Visualizer</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1><br>Explore Sorting Algorithms in Action!</h1>
+            <h2>Master sorting techniques through interactive visualizations.</h2>
+            <p>Sorting is a key concept in computer science that enhances efficiency and speeds up data processing.</p>
+            <div class="hero-buttons">
+                <a href="visualizer.html" class="btn">Start Visualizing</a>
+                <a href="algorithms.html" class="btn secondary-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="how-it-works">
+        <h2>How Sorting Works</h2>
+        <p>Sorting algorithms organize data efficiently. Here are the ones we cover:</p>
+    
+        <div class="algorithms">
+            <div class="algo-card"><h3><u>Bubble Sort</u></h3><p>Compares adjacent elements and swaps them if needed.</p></div>
+            <div class="algo-card"><h3><u>Insertion Sort</u></h3><p>Builds a sorted array one element at a time.</p></div>
+            <div class="algo-card"><h3><u>Selection Sort</u></h3><p>Finds the smallest element and places it in order.</p></div>
+            <div class="algo-card"><h3><u>Merge Sort</u></h3><p>Divides data into smaller parts, sorts, and merges them.</p></div>
+            <div class="algo-card"><h3><u>Quick Sort</u></h3><p>Uses a pivot to partition and sort data efficiently.</p></div>
+            <div class="algo-card"><h3><u>Radix Sort</u></h3><p>Sorts numbers digit by digit using buckets.</p></div>
+            <div class="algo-card"><h3><u>Bucket Sort</u></h3><p>Distributes elements into buckets and sorts them.</p></div>
+        </div>
+    </section>
+    <section class="algorithm-selection">
+        <h2>Select a Sorting Algorithm</h2>
+        <p>Choose an algorithm below to learn more and see it in action!</p>
+    
+            <div class="algo-grid">
+                <div class="algo-option" onclick="location.href='bubblesort.html'">
+                    <h3>Bubble Sort</h3>
+                </div>
+                <div class="algo-option" onclick="location.href='insertionsort.html'">
+                    <h3>Insertion Sort</h3>
+                </div>
+                <div class="algo-option" onclick="location.href='selectionsort.html'">
+                    <h3>Selection Sort</h3>
+                </div>
+                <div class="algo-option" onclick="location.href='bucketsort.html'" id="bucket">
+                    <h3>Bucket Sort</h3>
+                </div>
+                <div class="algo-option" onclick="location.href='mergesort.html'">
+                    <h3>Merge Sort</h3>
+                </div>
+                <div class="algo-option" onclick="location.href='quicksort.html'">
+                    <h3>Quick Sort</h3>
+                </div>
+                <div class="algo-option" onclick="location.href='radixsort.html'">
+                    <h3>Radix Sort</h3>
+                </div>
+            </div>
+    </section>
+      
+    <!-- User Testimonials Section -->
+<section class="testimonials">
+    <h2>What Users Say<br><br></h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"This sorting visualizer helped me understand algorithms like never before! The animations are super helpful."</p>
+            <h4>- Karan.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"A must-have tool for students learning data structures. The comparisons are clear and well-explained."</p>
+            <h4>- Piyush.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Dark mode support and smooth animations make this the best sorting visualizer I've used!"</p>
+            <h4>- Aariz.</h4>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+    <h2>Frequently Asked Questions<br><br></h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h3>Which sorting algorithm is the fastest?</h3>
+            <p>QuickSort and MergeSort are typically the fastest for large datasets due to their O(n log n) complexity.</p>
+        </div>
+        <br>
+        <div class="faq-item">
+            <h3>What is the best sorting algorithm for beginners?</h3>
+            <p>Bubble Sort and Insertion Sort are the easiest to understand but not the most efficient.</p>
+        </div>
+        <br>
+        <div class="faq-item">
+            <h3>Does this visualizer work on mobile?</h3>
+            <p>Yes! The website is fully responsive and works well on all devices.</p>
+        </div>
+    </div>
+</section>
+<!-- Chatbot Button -->
+<button id="chatbot-button">💬 Chat</button>
+
+<!-- Chatbot Container (Initially Hidden) -->
+<div id="chatbot-container">
+    <div id="chatbox">
+        <div id="messages"></div>
+        <input type="text" id="user-input" placeholder="Ask about sorting..." />
+        <br>
+        <button id="send-message">Send</button>
+    </div>
+</div>
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
+

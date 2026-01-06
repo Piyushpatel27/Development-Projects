@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="visualizer.html">Visualizer</a>
+        <a href="about.html">About</a>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <section class="algo-intro">
+        <h1><br><br>Quick Sort</h1>
+        <p>Quick Sort is a divide-and-conquer algorithm that picks a pivot element, partitions the array around the pivot, and then recursively sorts the subarrays.</p>
+    </section>
+
+    <section class="algo-details">
+        <h2>How It Works</h2>
+        <ul>
+            <li>Choose a pivot element from the array.</li>
+            <li>Rearrange elements so that those smaller than the pivot go to the left and those greater go to the right (partitioning step).</li>
+            <li>Recursively apply Quick Sort to the left and right subarrays.</li>
+        </ul>
+
+        <h2>Time Complexity</h2>
+        <p><strong>Best Case:</strong> O(n log n) (Balanced partitioning)</p>
+        <p><strong>Worst Case:</strong> O(n²) (If always choosing the worst pivot, like the smallest or largest element)</p>
+        <p><strong>Average Case:</strong> O(n log n)</p>
+
+        <h2>Example</h2>
+        <pre>
+            <img src="picture5.gif">
+        </pre>
+
+        <h2>Advantages & Disadvantages</h2>
+        <p><strong>✅ Advantages:</strong> Efficient for large datasets, in-place sorting (no extra space required).</p>
+        <p><strong>❌ Disadvantages:</strong> Worst case performance is poor if pivot selection is bad.</p>
+
+    </section>
+
+    <section class="visualizer-link">
+        <a href="visualizer.html">Try Quick Sort in the Visualizer →</a>
+    </section>
+
+    <script type="module" src="script.js"></script>
+
+
+</body>
+</html>
