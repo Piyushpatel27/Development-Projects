@@ -1,0 +1,43 @@
+### Variables in Javascript ###
+
+1. userName="admin"  ---> without type variable can also be declared (BUT NOT SAFE PRACTISE)
+
+2. var : scope-problem (block scope and functional scope) before ES6
+        var userEmail="abc@yahoo"
+
+3. let : after ES6+ scope defined for proper variable definition and usage
+        let userCity="Delhi"
+
+4. const : used for declaring variable with a fixed value/immutable value 
+        const userId=1245801
+
+***NOTE: (i)let and const (used commonly now) preferred over var
+         (ii) "use strict";  --> treats all the js code as newer version
+
+Output methods:
+        1. console.log(userId)
+           console.log(userCity)
+                    OR
+           console.table([userName,userId, userCity, userEmail])
+
+        2. if variable declared but not initialised then "undefined"
+            ex: let userState;
+                if console.log(userState) then it gives undefined as output
+
+#### Datatypes ####  (https://tc39.es/ecma262/#sec-ecmascript-language-types) (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures)
+1. string 
+
+2. number : 
+
+3. boolean : gives output in either true/false
+
+4. undefined : declared but uninitialised
+
+5. null : standalone value/represent empty value (declared and initialised)
+
+6. Symbol : used to find uniqueness of components (used in react)
+
+7. Object : 
+            Each instance of the Object type, also referred to simply as “an Object”, 
+            represents a collection of properties. Each property is either a data property,
+            or an accessor property:
